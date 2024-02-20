@@ -21,7 +21,7 @@ SELECT * FROM matches WHERE hometeam = 'Barcelona' OR awayteam = 'Barcelona';
 3) What are the names of the Scottish divisions included?
 
 ```sql
-<!-- Copy solution here -->
+SELECT * FROM divisions WHERE country = 'Scotland';
 
 
 ```
