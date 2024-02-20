@@ -13,7 +13,7 @@ SELECT * FROM matches WHERE season = 2017;
 2) Find all the matches featuring Barcelona.
 
 ```sql
-<!-- Copy solution here -->
+SELECT * FROM matches WHERE hometeam = 'Barcelona' OR awayteam = 'Barcelona';
 
 
 ```
