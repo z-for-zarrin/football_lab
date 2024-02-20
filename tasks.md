@@ -5,7 +5,7 @@ Each of the questions/tasks below can be answered using a `SELECT` query. When y
 1) Find all the matches from 2017.
 
 ```sql
-<!-- Copy solution here -->
+SELECT * FROM matches WHERE season = 2017;
 
 
 ```
