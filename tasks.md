@@ -73,7 +73,10 @@ WHERE ftr = 'D' AND division_code IN (SELECT code FROM divisions WHERE name = 'E
 9) Select the matches played in the Premier League in order of total goals scored (`fthg` + `ftag`) from highest to lowest. When two matches have the same total the match with more home goals (`fthg`) should come first. 
 
 ```sql
-<!-- Copy solution here -->
+SELECT hometeam, awayteam, fthg, ftag, fthg+ftag AS total_goals 
+FROM matches
+WHERE division_code IN (SELECT code FROM divisions WHERE name = 'Premier League')
+ORDER BY total_goals DESC, fthg DESC;
 
 
 ```
