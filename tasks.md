@@ -55,7 +55,7 @@ WHERE division_code IN (SELECT code FROM divisions WHERE country = 'France');
 7) Have Huddersfield played Swansea in any of the recorded matches?
 
 ```sql
-<!-- Copy solution here -->
+SELECT * FROM matches WHERE hometeam = 'Huddersfield' AND awayteam = 'Swansea';
 
 
 ```
